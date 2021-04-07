@@ -17,5 +17,4 @@ Algoritmo diurnoYNocturno
 	SiNo
 		Escribir "El pago es: ", pago;
 	FinSi
-	
 FinAlgoritmo
