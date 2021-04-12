@@ -11,12 +11,17 @@ Algoritmo rentaAutomoviles
 	
 	limiteRecorrido = 1000;
 	recorridoNormal = 300;
-	Si(kilometros <= limiteRecorrido Y kilometros >= recorridoNormal)
-		montoAdicionado = (kilometros - recorridoNormal) * 1500;
+	Si(kilometros <= recorridoNormal)
 		totalImpuestos = (montoAdicionado + montoAlquiler) * impuestos;
-		pago = totalImpuestos + (montoAdicionado + montoAlquiler);
-		Escribir "El total a pagar por el alquiler del vehiculo es: ", pago;
+		pago = totalImpuestos + montoAlquiler;
+		Escribir "El total es: ", pago;
 	SiNo
+		Si(kilometros <= limiteRecorrido Y kilometros > recorridoNormal)
+			montoAdicionado = (kilometros - recorridoNormal) * 1500;
+			totalImpuestos = (montoAdicionado + montoAlquiler) * impuestos;
+			pago = totalImpuestos + (montoAdicionado + montoAlquiler);
+			Escribir "El total a pagar por el alquiler del vehiculo es: ", pago;
+		FinSi
 		Si(kilometros > limiteRecorrido)
 			montoAdicionado = (kilometros - recorridoNormal) * 1000;
 			totalImpuestos = (montoAdicionado + montoAlquiler) * impuestos;
