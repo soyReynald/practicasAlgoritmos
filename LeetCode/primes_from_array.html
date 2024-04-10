@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /**
+         * @param {number} left
+         * @param {number} right
+         * @return {number[]}
+         */
+        var closestPrimes = function(left, right) {
+            let minorsPrimeNumbersClosersAsPrimeInArray = [];
+            let res = [-1, -1];
+            let minDiff = Infinity;
+
+            for(let i=left; i<=right; i++){
+                if(isPrime(i)) minorsPrimeNumbersClosersAsPrimeInArray.push(i)
+            }
+
+            for(let i=1; i<minorsPrimeNumbersClosersAsPrimeInArray.length; i++){
+                let diff = minorsPrimeNumbersClosersAsPrimeInArray[i]-minorsPrimeNumbersClosersAsPrimeInArray[i-1];
+                if(diff<minDiff){
+                    res = [minorsPrimeNumbersClosersAsPrimeInArray[i-1], minorsPrimeNumbersClosersAsPrimeInArray[i]]
+                    minDiff = diff;
+                }
+            }
+            return res;
+        };
+
+        function isPrime(n) {
+            if (n === 1) return false;
+            if (n % 2 === 0) return n === 2;
+            let max = Math.floor(Math.sqrt(n)) ;
+            for(let i = 3; i <= max; i += 2) {
+                if (n % i === 0) return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

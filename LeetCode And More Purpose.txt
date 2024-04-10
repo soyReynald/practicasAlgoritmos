@@ -1,0 +1,45 @@
+La idea no es aparentar ser un genio.
+
+La idea es cometer errores, expandir mi mente, sin forzarme pero tratar,
+intentar, y entregar los resultados a Jesús.
+
+//
+
+Se agregó al arreglo.
+El problema es fácil, es sólo ordenar las coincidencias.
+Además, las coincidencias no pueden pasar del número total dado
+por "m".
+
+The difficult part for me would be the sorting part.
+To sort the array in non-decrease way.
+
+Honestamente creo que eso es practicamente todo.
+Si no funciona, pues aprendemos del error, y avanzamos poco a poco
+de eso se trata: No de ser un genio de la noche a la mañana.
+Ya hice lo que pude.
+
+Ahora  a  investigar y ver en qué me equivoqué para aprender
+Aquí usa callbacks... Creo que puede haber una solución
+más sencilla, a ver.
+
+Ésta solución está en otro lenguaje, pero debe ser lo mismo.
+Trataré de traducirla.
+Guardaré mi error, y cómo lo solucioné con la ayuda
+
+Trataré de hacerlo con el for, en lugar del while
+
+
+La verdad yo no estaba tan lejos
+Al parecer con el for se excede en tiempo.
+Las condiciones que se hacen dentro del for, impiden que sea un for
+que utilice. Pero, el While lo acepta.
+Por hoy está bien así.
+
+Bay!
+
+Dios les bendiga mucho :)
+
+
+
+
+
