@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-
+const s = "MCMLXXXIX";
 var romanToInt = function(s) {
     const romanHash = {
         I: 1,
